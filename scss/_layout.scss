@@ -6,7 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5vh;
 }
 
 .hidden {
@@ -14,5 +14,8 @@ header {
 }
 
 .hero {
-    position: relative;
+    position: absolute;
+    top: 35%;
+    width: 80%;
+
 }
