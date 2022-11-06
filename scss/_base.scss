@@ -18,4 +18,10 @@ html {
 
 a { 
     text-decoration: none;
+    color: var(--off-white);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--off-white);
 }
