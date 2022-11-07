@@ -13,12 +13,12 @@ header {
     background-color: var(--darker-gray);
 }   
 
-main {
-    padding: 0 5%;
-    margin: 0 10%;
-    border-left: 1px solid var(--lighter-gray);
-    border-right: 1px solid var(--lighter-gray);
-}
+// main {
+//     padding: 0 5%;
+//     margin: 0 10%;
+//     border-left: 1px solid var(--lighter-gray);
+//     border-right: 1px solid var(--lighter-gray);
+// }
 
 .hidden {
     display: none;
@@ -26,11 +26,20 @@ main {
 
 .hero-container {
     display: flex;
-    height: calc(100vh - (5vh + 100px));
+    height: calc(100vh - (5vh + 100px + 2rem));
     justify-content: center;
     align-items: center;
+
+    padding: 0 5%;
+    margin: 2rem 10% 2rem;
+    border-left: 1px solid var(--lighter-gray);
+    border-right: 1px solid var(--lighter-gray);
 }
 
 .hero {
     position: relative;
+    text-align: center;
 }
+
+
+     
