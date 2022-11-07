@@ -1,19 +1,23 @@
 body {
-    margin: 0 10%;
-    border-left: 1px solid var(--lighter-gray);
-    border-right: 1px solid var(--lighter-gray);
+    // margin: 0 10%;
+    // border-left: 1px solid var(--lighter-gray);
+    // border-right: 1px solid var(--lighter-gray);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vh 5% 0;
+    padding: 0 5%;
     height: 100px;
-}
+    background-color: var(--darker-gray);
+}   
 
 main {
     padding: 0 5%;
+    margin: 0 10%;
+    border-left: 1px solid var(--lighter-gray);
+    border-right: 1px solid var(--lighter-gray);
 }
 
 .hidden {
