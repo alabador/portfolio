@@ -1,21 +1,32 @@
 body {
-    padding: 0 10%;
+    margin: 0 10%;
+    border-left: 1px solid var(--lighter-gray);
+    border-right: 1px solid var(--lighter-gray);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5vh;
+    padding: 5vh 5% 0;
+    height: 100px;
+}
+
+main {
+    padding: 0 5%;
 }
 
 .hidden {
     display: none;
 }
 
-.hero {
-    position: absolute;
-    top: 35%;
-    width: 80%;
+.hero-container {
+    display: flex;
+    height: calc(100vh - (5vh + 100px));
+    justify-content: center;
+    align-items: center;
+}
 
+.hero {
+    position: relative;
 }
