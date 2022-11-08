@@ -7,9 +7,9 @@ header {
     background-color: var(--main-bg-color);
 }   
 
-main {
-    padding: 0 10vw;
-}
+// main {
+//     padding: 0 10vw;
+// }
 
 .hidden {
     display: none;
@@ -21,6 +21,7 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 8rem;
+    padding: 0 10vw;
     padding-top: 8rem; 
 
     @media screen and (min-width: 600px) {
@@ -73,6 +74,11 @@ main {
 
 .about-container, .projects-container {
     padding: 8rem 0;
+
+    h1 {
+        padding: 0 10vw;
+    }
+    
 }
 
 
