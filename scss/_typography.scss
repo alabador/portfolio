@@ -7,7 +7,7 @@
 .hero h3 {
     color: var(--softer-white);
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 200;
 
     @media screen and (min-width: 800px) {
         font-size: 2.4rem;
@@ -41,6 +41,7 @@
 .hero-p {
     font-size: 1.6rem;
     line-height: 3rem;
+    font-weight: 300;
     color: var(--softer-white);
     padding-bottom: 4rem;
     @media screen and (min-width: 1000px) {
@@ -48,9 +49,29 @@
     }
 }
 
+.title-deco {
+    color: var(--softer-white);
+    margin-right: 1rem;
+    font-weight: 200;
+}
+
 .about-title, .projects-title {
     font-size: 2.4rem;
     color: var(--orange-accent);
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 3rem;
+    }
+}
+
+.about-title::after , .projects-title::after {
+    content: '';
+    margin-left: 4rem;
+    height: 1px;
+    width: 25%;
+    background-color: var(--lighter-gray);
 }
 
 
