@@ -73,11 +73,13 @@ header {
 }
 
 .about-container, .projects-container {
-    padding: 8rem 10vw;
-    
+    // padding: 8rem 10vw;
+    margin: 8rem 10vw;
 }
 
 .projects-section {
+    display: grid;
+    gap: 4rem;
     @media screen and (min-width:800px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -85,7 +87,26 @@ header {
     }
 
     @media screen and (min-width: 1000px) {
-        display: inline-block;
+        grid-template-columns: 1fr;;
+        display: grid;
+        gap: 4rem;
+    }
+}
+
+.additional-projects-container {
+    margin: 8rem 10vw;
+}
+
+.additional-projects {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @media screen and (min-width: 720px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

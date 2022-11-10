@@ -60,6 +60,7 @@
     color: var(--orange-accent);
     display: flex;
     align-items: center;
+    margin: 0 0 4rem;
 
     @media screen and (min-width: 1000px) {
         font-size: 3rem;
@@ -74,7 +75,7 @@
     background-color: var(--lighter-gray);
 }
 
-.full-project-text {
+.full-project-text, .mini-project-text {
     h2 {
         font-size: 2.4rem;
         color: var(--off-white);
