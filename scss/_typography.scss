@@ -75,7 +75,7 @@
     background-color: var(--lighter-gray);
 }
 
-.full-project-text, .mini-project-text {
+.full-project-text {
     h2 {
         font-size: 2.4rem;
         color: var(--off-white);
@@ -90,3 +90,12 @@
     }
 }
 
+.mini-project-text {
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        color: var(--softer-white);
+    }
+}
