@@ -14,24 +14,52 @@
 
 .full-project {
     display: flex;
-    margin: 4rem 0;
+    margin: 6rem 0;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
 
     @media screen and (min-width: 1000px) {
-        flex-direction: row;
+        // flex-direction: row;
+        display: grid;
+        grid-template-columns: 60% 40%;
     }
 
     .full-project-text{
-        flex-basis: 40%;
+        flex-basis: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem;
+        height: 100%;
+        justify-content: center;
+        background-color: var(--darker-gray);
+        border-radius: 8px 8px 0 0;
+        border-top: 12px solid var(--off-white);
+
+        @media screen and (min-width: 1000px) {
+            border-left: 12px solid var(--off-white);
+            border-top: none;
+            padding: 0 4rem;
+        }
     }
 
     .full-project-image {
-        flex-basis: 60%;
-
+        flex-basis: 40%;
+        border-radius: 0 0 8px 8px;
+        @media screen and (min-width: 1000px) {
+            border-radius: 0 8px 8px 0; 
+        }
         img {
             max-width: 100%;
+            border-radius: 0 0 8px 8px; 
+            @media screen and (min-width: 1000px) {
+                border-radius: 0 8px 8px 0; 
+            }
         }
+    }
+
+    .project-links {
+        display: flex;
+        gap: 2rem;
     }
 }
