@@ -7,10 +7,10 @@ export function showProjects(projects) {
 }
 
 export const projects = [
-    {title:'Daily CodeWars', info:'Coding challenges to help practice and improve programming skills.'},
-    {title:'Frontend UI', info:'A collection of UI and frontend components.'},
-    {title:'Sign Up Form', info:'A responsive sign up form for an arctic expedition.'},
-    {title:'Admin Dashboard', info:'An administrative Dashboard built using HTML and SCSS.'},
+    {title:'Daily CodeWars', info:'Coding challenges to help practice and improve programming skills.', code:'https://github.com/alabador/codewars'},
+    {title:'Frontend UI', info:'A collection of UI and frontend components.', code:'https://github.com/alabador/frontend-ui', live:'https://alabador.github.io/frontend-ui/four-card-feature-section/'},
+    {title:'Sign Up Form', info:'A responsive sign up form for an arctic expedition.', code:'https://github.com/alabador/sign-up-form', live:'https://alabador.github.io/sign-up-form/'},
+    {title:'Admin Dashboard', info:'An administrative Dashboard built using HTML and SCSS.', code:'https://github.com/alabador/admin-dashboard', live:'https://alabador.github.io/admin-dashboard/'},
 ]
 
 //project is an object taken from projects array
@@ -27,17 +27,24 @@ function buildProjectDetails(project) {
     projectInfo.classList.add('mini-project-text');
     projectInfo.append(buildElement('h2', `${project.title}`), buildElement('p', `${project.info}`));
     
-    projectInfo.append(buildProjectLinks());
+    projectInfo.append(buildProjectLinks(project));
     // console.log(projectInfo);
     return projectInfo;
 }
 
-function buildProjectLinks(){
+function buildProjectLinks(project){
     let projectLinks = document.createElement('div');
     projectLinks.classList.add('project-links');
-    const cta = buildElement('a', 'View Code')
-    cta.classList.add('project-cta');
-    projectLinks.append(cta);
+
+    if(project.hasOwnProperty('live')){
+        const ctaLive = buildElement('a', 'View Project')
+        ctaLive.classList.add('project-cta');
+        projectLinks.append(ctaLive);
+    }
+
+    const ctaCode = buildElement('a', 'View Code')
+    ctaCode.classList.add('project-cta');
+    projectLinks.append(ctaCode);
     return projectLinks;
 }
 
