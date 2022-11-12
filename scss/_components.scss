@@ -84,12 +84,14 @@
 
     .mini-project-text{
         @extend %project-text;
-        
-        .project-links a {
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-        }
     }
+}
+
+.project-cta {
+    color: var(--off-white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: pointer;
 }
 
 #view-more-projects {

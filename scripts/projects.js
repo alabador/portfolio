@@ -27,16 +27,22 @@ function buildProjectDetails(project) {
     projectInfo.classList.add('mini-project-text');
     projectInfo.append(buildElement('h2', `${project.title}`), buildElement('p', `${project.info}`));
     
-    let projectLinks = document.createElement('div');
-    projectLinks.classList.add('project-links');
-    projectLinks.append(buildElement('a', 'View Code', 'cta-button'));
-    projectInfo.append(projectLinks);
+    projectInfo.append(buildProjectLinks());
     // console.log(projectInfo);
     return projectInfo;
 }
 
+function buildProjectLinks(){
+    let projectLinks = document.createElement('div');
+    projectLinks.classList.add('project-links');
+    const cta = buildElement('a', 'View Code')
+    cta.classList.add('project-cta');
+    projectLinks.append(cta);
+    return projectLinks;
+}
+
 //content comes from project, due to closure
-function buildElement(tag, content = '', classList = '') {
+function buildElement(tag, content = '') {
     const element = document.createElement(tag);
     element.textContent = content;
     // console.log(element);
