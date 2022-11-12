@@ -87,7 +87,7 @@
         @extend %project-text;
         width: 100%;
         min-height: 100%;
-        // justify-content: stretch;
+        // justify-content: space-between;
     }
 }
 
@@ -96,6 +96,11 @@
     text-decoration: underline;
     text-underline-offset: 4px;
     cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.project-cta:hover {
+    color: var(--orange-accent);
 }
 
 #view-more-projects {
