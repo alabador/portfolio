@@ -64,11 +64,15 @@ function buildProjectLinks(project){
     if(project.hasOwnProperty('live')){
         const ctaLive = buildElement('a', 'View Project')
         ctaLive.classList.add('project-cta');
+        ctaLive.href = project.live;
+        ctaLive.setAttribute('target', '_blank');
         projectLinks.append(ctaLive);
     }
 
     const ctaCode = buildElement('a', 'View Code')
     ctaCode.classList.add('project-cta');
+    ctaCode.href = project.code;
+    ctaCode.setAttribute('target', '_blank');
     projectLinks.append(ctaCode);
     return projectLinks;
 }
