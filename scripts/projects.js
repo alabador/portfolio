@@ -1,9 +1,19 @@
 const projectsContainer = document.querySelector('.additional-projects');
+const viewMore = document.querySelector('#view-more-projects');
 
 export function showProjects(projects) {
-    for (let i = 0; i < projects.length; i++){
+    const displayProj = projects.slice(0,3);
+    const remainingProj = projects.slice(3, projects.length);
+    
+    for (let i = 0; i < displayProj.length; i++){
         projectsContainer.append(buildProject(projects[i]));
     }
+
+    viewMore.addEventListener('click', () => {
+        for (let i = 0; i < remainingProj.length; i++){
+            projectsContainer.append(buildProject(remainingProj[i]));
+        }
+    })
 }
 
 export const projects = [
