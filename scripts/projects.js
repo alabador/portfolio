@@ -4,14 +4,29 @@ const viewMore = document.querySelector('#view-more-projects');
 export function showProjects(projects) {
     const displayProj = projects.slice(0,3);
     const remainingProj = projects.slice(3, projects.length);
+    let toggleMore = false;
     
     for (let i = 0; i < displayProj.length; i++){
         projectsContainer.append(buildProject(projects[i]));
     }
 
     viewMore.addEventListener('click', () => {
-        for (let i = 0; i < remainingProj.length; i++){
-            projectsContainer.append(buildProject(remainingProj[i]));
+        if (toggleMore === true){
+            viewMore.textContent = 'View More'
+            toggleMore = !toggleMore;
+
+            while (projectsContainer.firstChild) {
+                projectsContainer.removeChild(projectsContainer.firstChild);
+            }
+            showProjects(displayProj);
+        }
+        else {
+            for (let i = 0; i < remainingProj.length; i++){
+                projectsContainer.append(buildProject(remainingProj[i]));
+            }
+            
+            viewMore.textContent = 'View Less';
+            toggleMore = !toggleMore;
         }
     })
 }

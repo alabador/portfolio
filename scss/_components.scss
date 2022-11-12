@@ -10,6 +10,12 @@
     border: 1px solid var(--orange-accent);
     padding: 1.6rem 3rem;
     font-size: 1.6rem;
+    position: relative;
+}
+//working on button hover states rn
+.cta-button:hover{
+    background-color: var(--orange-accent);
+    transition: 0.2s;
 }
 
 .project-links {
@@ -97,13 +103,20 @@
     text-underline-offset: 4px;
     cursor: pointer;
     font-size: 1.4rem;
+    position: relative;
 }
 
 .project-cta:hover {
     color: var(--orange-accent);
+    transition: 0.3s;
 }
 
 #view-more-projects {
     background-color: transparent;
     color: var(--off-white);
+    cursor: pointer;
+}
+#view-more-projects:hover {
+    background-color: var(--orange-accent);
+    transition: 0.2s;
 }
