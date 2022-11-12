@@ -6,6 +6,21 @@
     font-size: 32px;
 }
 
+.social-container {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin: 2rem 0;
+
+    i {
+        font-size: 2.4rem;
+    }
+}
+
+.social-container a:hover {
+    color: var(--orange-accent);
+}
+
 .cta-button {
     border: 1px solid var(--orange-accent);
     padding: 1.6rem 3rem;
@@ -17,6 +32,7 @@
     background-color: var(--orange-accent);
     transition: 0.2s;
 }
+
 
 .project-links {
     display: flex;
