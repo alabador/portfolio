@@ -2,9 +2,9 @@
 
 Repository for personal portfolio. 
 
-Link to Project: [#](#)
+Link to Project: [Portfolio](https://alabador.github.io/portfolio/)
 
-![Desktop Version](./advice-screenshot.png)
+![Desktop Version](./img/portfolio.png)
 
 ## How It's Made
 
