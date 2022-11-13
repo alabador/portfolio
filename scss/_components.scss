@@ -100,6 +100,15 @@
     }
 }
 
+.about-text {
+    @extend %project-text;
+}
+
+.about-skills {
+    @extend %project-text;
+    border-top: 12px solid var(--orange-accent);
+}
+
 .mini-project {
     @extend %project-base;
     margin: 1rem 0;
