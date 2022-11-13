@@ -114,6 +114,7 @@ nav {
     grid-template-columns: 1fr;
     gap: 4rem;
     align-items: center;
+    justify-content: center;
     @media screen and (min-width: 1000px) {
         // flex-direction: row;
         grid-template-columns: 1fr 1fr;
