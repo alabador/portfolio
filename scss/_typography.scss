@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 * {
     font-family: 'Inter', sans-serif;
@@ -20,6 +21,9 @@
 .hero-name {
     font-size: 3.2rem;
     font-weight: 700;
+    font-family: 'Righteous', 'Inter', sans-serif;
+    letter-spacing: .4rem;
+    color: var(--off-white);
 
     @media screen and (min-width: 800px) {
         font-size: 4rem;
@@ -56,10 +60,12 @@
 
 .about-title, .projects-title {
     font-size: 3rem;
-    color: var(--orange-accent);
+    color: var(--off-white);
     display: flex;
     align-items: center;
     margin: 0 0 4rem;
+    font-family: 'Righteous', 'Inter', sans-serif;
+    letter-spacing: .4rem;
 
     @media screen and (min-width: 1000px) {
         font-size: 3rem;

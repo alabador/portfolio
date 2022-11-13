@@ -33,7 +33,7 @@ export function showProjects(projects) {
 
 export const projects = [
     {title:'Daily CodeWars', info:'Coding challenges to help practice and improve programming skills.', code:'https://github.com/alabador/codewars'},
-    {title:'Frontend UI', info:'A collection of UI and frontend components.', code:'https://github.com/alabador/frontend-ui', live:'https://alabador.github.io/frontend-ui/four-card-feature-section/'},
+    {title:'Frontend UI', info:'A collection of UI and frontend components.', code:'https://github.com/alabador/frontend-ui'},
     {title:'Sign Up Form', info:'A responsive sign up form for an arctic expedition.', code:'https://github.com/alabador/sign-up-form', live:'https://alabador.github.io/sign-up-form/'},
     {title:'Admin Dashboard', info:'An administrative Dashboard built using HTML and SCSS.', code:'https://github.com/alabador/admin-dashboard', live:'https://alabador.github.io/admin-dashboard/'},
 ]
