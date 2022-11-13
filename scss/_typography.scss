@@ -33,18 +33,6 @@
     }
 }
 
-.hero-gen {
-    color: var(--orange-accent);
-    font-size: 2.4rem;
-    padding: 2rem 0;
-    @media screen and (min-width: 1000px) {
-        font-size: 3rem;
-    }
-
-    overflow: hidden;
-    border-right: .15rem solid var(--orange-accent);
-    // width: 0;
-}
 
 .hero-p {
     font-size: 1.6rem;
