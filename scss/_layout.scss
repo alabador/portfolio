@@ -7,6 +7,23 @@ header {
     background-color: var(--main-bg-color);
 }   
 
+nav {
+    .desktop-nav-links {
+        display: none;
+        @media screen and (min-width: 1000px) {
+            flex-direction: row;
+            display: flex;
+            font-size: 1.6rem;
+            gap: 1.2rem;
+            align-items: center;
+        }
+    }
+    .hamburger {
+        @media screen and (min-width: 1000px) {
+            display: none;
+        }
+    }
+}
 
 .hidden {
     display: none;
