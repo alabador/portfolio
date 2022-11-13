@@ -7,6 +7,10 @@
     font-family: 'Righteous', 'Inter', sans-serif;
 }
 
+.desktop-nav-link a:hover {
+    color: var(--orange-accent);
+}
+
 .resume-link {
     padding: 8px 12px;
     border: 1px solid var(--off-white);
@@ -27,6 +31,41 @@
     color: var(--orange-accent);
 }
 
+.gen-container {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 1rem 0;
+
+    .hero-gen {
+        color: var(--orange-accent);
+        font-size: 2.4rem;
+        padding: 0 .4rem 0 0;
+        @media screen and (min-width: 1000px) {
+            font-size: 3rem;
+        }
+    
+        overflow: hidden;
+        border-right: .15rem solid var(--orange-accent);
+        white-space: nowrap;
+        width: 0;
+        animation: 
+            typing 2s steps(16, end) forwards,
+            // typing 2s steps(16, end) reverse,
+            blink .8s infinite;
+        // animation-iteration-count: infinite;
+    }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: var(--orange-accent); }
+}
+
 .cta-button {
     border: 1px solid var(--orange-accent);
     padding: 1.6rem 3rem;
@@ -38,7 +77,6 @@
     background-color: var(--orange-accent);
     transition: 0.2s;
 }
-
 
 .project-links {
     display: flex;

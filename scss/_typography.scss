@@ -40,6 +40,10 @@
     @media screen and (min-width: 1000px) {
         font-size: 3rem;
     }
+
+    overflow: hidden;
+    border-right: .15rem solid var(--orange-accent);
+    // width: 0;
 }
 
 .hero-p {
