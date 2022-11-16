@@ -111,3 +111,17 @@
         color: var(--softer-white);
     }
 }
+
+.contact-text {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 400;
+    color: var(--softer-white);
+
+    .contact-email {
+        text-decoration: underline;
+        font-size: 2rem;
+        display: inline-block;
+        padding: 2rem 0;
+    }
+}
