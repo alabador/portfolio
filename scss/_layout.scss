@@ -138,6 +138,11 @@ nav {
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         gap: 2rem;
+
+        @media screen and (max-width: 420px) {
+            padding: 2rem;
+            gap: 1rem;
+        }
     }
 }
 

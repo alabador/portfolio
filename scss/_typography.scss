@@ -77,14 +77,29 @@
         font-size: 1.6rem;
         color: var(--softer-white);
         margin: 1rem 0;
+
+        @media screen and (max-width: 420px) {
+            font-size: 1.2rem;
+        }
     }
     h3 {
         font-size: 2rem;
+    }
+
+}
+
+.about-skills p {
+    @media screen and (max-width: 420px) {
+        font-size: 1.2rem;
     }
 }
 
 .skill i {
     font-size: 5rem;
+
+    @media screen and (max-width: 420px) {
+        font-size: 3rem;
+    }
 }
 
 .full-project-text {
@@ -99,6 +114,10 @@
     p {
         font-size: 1.6rem;
         color: var(--softer-white);
+
+        @media screen and (max-width: 420px) {
+            font-size: 1.4rem;
+        }
     }
 }
 

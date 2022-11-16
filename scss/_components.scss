@@ -81,6 +81,15 @@
 .project-links {
     display: flex;
     gap: 2rem;
+
+    a {
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+
+        @media screen and (min-width: 800px) {
+            padding: 1.6rem 3rem;
+        }
+    }
 }
 
 %project-base {
@@ -100,7 +109,7 @@
     width: 100%;
     justify-content: center;
     background-color: var(--darker-gray);
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 8px 8px;
     border-top: 12px solid var(--blue-gray);
 }
 
