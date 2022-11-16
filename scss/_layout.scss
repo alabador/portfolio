@@ -91,7 +91,7 @@ nav {
     }
 }
 
-.about-container, .projects-container, .contact-section {
+.about-container, .projects-container, .contact-section, footer {
     padding: 8rem 10vw;
 }
 
@@ -222,6 +222,21 @@ nav {
       var(--orange-accent), 
       var(--main-bg-color)
     ) 1 100%;
+}
+
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
      
