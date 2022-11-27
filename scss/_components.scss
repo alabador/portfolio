@@ -93,6 +93,10 @@
     }
 }
 
+.mini-project-text .project-links .project-cta {
+    padding-left: 0;
+}
+
 %project-base {
     display: flex;
     // margin: 2rem 0;
@@ -106,6 +110,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 4rem;
+    padding-bottom: 5rem;
     height: 100%;
     width: 100%;
     justify-content: center;
