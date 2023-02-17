@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fa-brands {
+    font-size: 1.6rem;
+}
+
+.skill {
+    font-size: 3rem;
+}
+
+.project-dark {
+    border: 1px solid  
+}
+
+.project-light {
+    
+}

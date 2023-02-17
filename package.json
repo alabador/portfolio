@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Repository for personal portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alabador/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alabador/portfolio/issues"
+  },
+  "homepage": "https://github.com/alabador/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
