@@ -929,6 +929,45 @@ video {
 .project-light {
 }
 
+.gen-container{
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.hero-gen {
+  color: var(--orange-accent);
+  padding: 0 .4rem 0 0;
+  overflow: hidden;
+  border-right: .15rem solid white;
+  white-space: nowrap;
+  width: 0;
+  animation: 
+        typing 2s steps(16, end) forwards,
+        /* typing 2s steps(16, end) reverse, */
+        blink .8s infinite;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent
+  }
+
+  to {
+    border-color: white;
+  }
+}
+
 .hover\:text-sky-900:hover {
   --tw-text-opacity: 1;
   color: rgb(12 74 110 / var(--tw-text-opacity));
@@ -940,11 +979,6 @@ video {
 
 .peer:checked ~ .peer-checked\:right-0 {
   right: 0px;
-}
-
-.peer:checked ~ .peer-checked\:bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:border-gray-500 {
@@ -1051,5 +1085,10 @@ video {
   .lg\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
