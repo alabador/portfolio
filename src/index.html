@@ -16,7 +16,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 	</head>
-	<body>
+	<body class="bg-slate-50 dark:bg-gray-800">
 		<header class="p-4 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
 			<div class="container flex justify-between h-16 mx-auto">
 				<a
@@ -45,7 +45,7 @@
 					</label>
 
 					<li
-						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						class="flex hover:text-orange-400 dark:hover:text-orange-400">
 						<a
 							rel="noopener noreferrer"
 							href="#projects"
@@ -54,7 +54,7 @@
 						>
 					</li>
 					<li
-						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						class="flex hover:text-orange-400 dark:hover:text-orange-400">
 						<a
 							rel="noopener noreferrer"
 							href="#about"
@@ -63,7 +63,7 @@
 						>
 					</li>
 					<li
-						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						class="flex hover:text-orange-400 dark:hover:text-orange-400">
 						<a
 							rel="noopener noreferrer"
 							href="#contact"
@@ -88,7 +88,7 @@
 				</button>
 			</div>
 		</header>
-		<main>
+		<main id="main">
             <!-- Scroll to Top -->
             <button type="button" class="px-4 py-3 mr-4 font-semibold rounded-full bg-gray-900 text-gray-100 dark:bg-gray-100 dark:text-gray-800 fixed right-0 bottom-4 opacity-70" id="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
 			<!-- Hero -->
@@ -101,36 +101,39 @@
 					<div class="gen-container px-8 mt-8 text-lg lg:text-2xl">
 						<h2 class="hero-gen">Software Developer</h2>
 					</div>
+                    <div class="hero-image-container flex justify-center">
+                        <img src="../img/computer_illustration_1.png" alt="" class="w-1/2">
+                    </div>
 					<div
 						class="social-container flex justify-between items-center gap-4 my-8 w-full">
 						<span
-							class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
+							class="h-0.5 bg-orange-400 w-full"></span>
 						<div class="social-links flex gap-8">
 							<a
 								href="https://github.com/alabador"
 								target="_blank"
-								class="hover:text-sky-900 dark:hover:text-teal-200"
+								class="hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-github"></i
 							></a>
 							<a
 								href="https://www.linkedin.com/in/austinlabador/"
 								target="_blank"
-								class="hover:text-sky-900 dark:hover:text-teal-200"
+								class="hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-linkedin-in"></i
 							></a>
 							<a
 								href="https://twitter.com/alabador_v2"
 								target="_blank "
-								class="hover:text-sky-900 dark:hover:text-teal-200"
+								class="hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-twitter"></i
 							></a>
 						</div>
 						<span
-							class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
+							class="h-0.5 bg-orange-400 w-full"></span>
 					</div>
 					<div class="flex flex-wrap justify-center">
 						<a
-							href=#projects class="px-8 py-3 m-2 text-lg border border-sky-900 rounded dark:text-gray-50 dark:border-gray-700 hover:text-sky-900 dark:hover:text-teal-200">
+							href=#projects class="px-8 py-3 m-2 text-lg border border-orange-400 rounded dark:text-gray-50 dark:border-gray-700 hover:text-orange-400 dark:hover:text-orange-400">
 							View Projects
                         </a>
 					</div>
@@ -146,7 +149,7 @@
 				</div>
 				<div class="projects grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
 					<article
-						class="px-10 py-6 rounded-sm border-2 border-solid border-sky-900 dark:border-gray-500">
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500">
 						<div class="flex py-2 flex-wrap gap-1">
 							<p
 								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
@@ -180,20 +183,20 @@
 							<a
 								href="https://alabador.github.io/weather-app/"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-solid fa-link"></i
 							></a>
 							<a
 								href="https://github.com/alabador/weather-app"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-github"></i
 							></a>
 						</div>
 					</article>
 
 					<article
-						class="px-10 py-6 rounded-sm border-2 border-solid border-sky-900 dark:border-gray-500 flex flex-col">
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500 flex flex-col">
 						<div class="flex py-2 flex-wrap gap-1">
 							<p
 								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
@@ -217,20 +220,20 @@
 							<a
 								href="https://timetracker-dash.netlify.app/"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-solid fa-link"></i
 							></a>
 							<a
 								href="https://github.com/alabador/time-tracking-dashboard"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-github"></i
 							></a>
 						</div>
 					</article>
 
 					<article
-						class="px-10 py-6 rounded-sm border-2 border-solid border-sky-900 dark:border-gray-500 flex flex-col">
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500 flex flex-col">
 						<div class="flex py-2 flex-wrap gap-1">
 							<p
 								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
@@ -251,13 +254,13 @@
 							<a
 								href="https://alabador.github.io/free-game-findings/"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-solid fa-link"></i
 							></a>
 							<a
 								href="https://github.com/alabador/free-game-findings"
 								target="_blank"
-								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
 								><i class="fa-brands fa-github"></i
 							></a>
 						</div>
@@ -265,7 +268,7 @@
 				</div>
                 <div class="flex flex-wrap justify-center">
                     <a
-                        href='./projects.html' class="px-8 py-3 m-2 text-lg border border-sky-900 rounded dark:text-gray-50 dark:border-gray-700 hover:text-sky-900 dark:hover:text-teal-200">
+                        href='./projects.html' class="px-8 py-3 m-2 text-lg border border-orange-400 rounded dark:text-gray-50 dark:border-gray-700 hover:text-orange-400 dark:hover:text-orange-400">
                         View All Projects
                     </a>
                 </div>
@@ -299,7 +302,7 @@
 			</section>
 
 			<!-- Tech Stack -->
-			<section class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100 py-8 px-4 md:px-10 lg:px-32">
+			<section class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100 py-8 px-4 md:px-10 lg:px-32" id="tech-stack">
 				<div
 					class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
 					<h2 class="text-3xl font-bold">My Tech Stack</h2>
@@ -366,15 +369,15 @@
                 <form novalidate="" class="space-y-6 ng-untouched ng-pristine ng-valid">
                     <div>
                         <label for="name" class="text-sm">Full name</label>
-                        <input id="name" type="text" placeholder="" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 dark:bg-gray-800 dark:border-b dark:border-b-gray-100">
+                        <input id="name" type="text" placeholder="" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 bg-transparent dark:border-b dark:border-b-gray-100">
                     </div>
                     <div>
                         <label for="email" class="text-sm">Email</label>
-                        <input id="email" type="email" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 dark:bg-gray-800 dark:border-b dark:border-b-gray-100">
+                        <input id="email" type="email" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 bg-transparent dark:border-b dark:border-b-gray-100">
                     </div>
                     <div>
                         <label for="message" class="text-sm">Message</label>
-                        <textarea id="message" rows="3" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 dark:bg-gray-800 dark:border-b dark:border-b-gray-100"></textarea>
+                        <textarea id="message" rows="3" class="w-full p-3 focus:outline-none bg-slate-50 border-b border-gray-900 bg-transparent dark:border-b dark:border-b-gray-100"></textarea>
                     </div>
                     <button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-gray-900 text-slate-100 dark:bg-blue-400 dark:text-gray-900">Send Message</button>
                 </form>
@@ -384,10 +387,10 @@
             <div class="footer-info bg-slate-50 dark:bg-gray-800 dark:text-gray-100 py-8 md:px-12 lg:px-16 xl:px-32 flex flex-col justify-center items-center md:flex-row md:justify-between md:items-center">
                 <p>Created by Austin Labador</p>
                 <div class="social-container flex gap-2 items-center">
-                    <a href="https://github.com/alabador/portfolio" class="hover:text-sky-900 dark:hover:text-teal-200">View on GitHub</a>
-                    <a href="https://github.com/alabador" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/austinlabador/" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/alabador_v2" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/alabador/portfolio" class="hover:text-orange-400 dark:hover:text-orange-400">View on GitHub</a>
+                    <a href="https://github.com/alabador" target="_blank" class="hover:text-orange-400 dark:hover:text-orange-400"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/austinlabador/" target="_blank" class="hover:text-orange-400 dark:hover:text-orange-400"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/alabador_v2" target="_blank" class="hover:text-orange-400 dark:hover:text-orange-400"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </footer>
