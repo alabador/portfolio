@@ -10,7 +10,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-    <header class="p-4 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
+    <div class="fixed hidden h-screen w-screen bg-slate-50 dark:bg-gray-800 dark:text-gray-100 md:hidden" id="overlay">
+        <ul class="flex flex-col items-center justify-center h-full gap-8">
+            <li
+                class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                <a
+                    rel="noopener noreferrer"
+                    href="#projects"
+                    class="flex items-center px-4"
+                    >Projects</a
+                >
+            </li>
+            <li
+                class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                <a
+                    rel="noopener noreferrer"
+                    href="#about"
+                    class="flex items-center px-4"
+                    >About</a
+                >
+            </li>
+            <li
+                class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                <a
+                    rel="noopener noreferrer"
+                    href="#contact"
+                    class="flex items-center px-4"
+                    >Contact</a
+                >
+            </li>
+        </ul>
+    </div>
+    <header class="p-4 md:px-10 lg:px-32 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
         <div class="container flex justify-between h-16 mx-auto">
             <a
                 rel="noopener noreferrer"
@@ -38,7 +69,7 @@
                 </label>
 
                 <li
-                    class="flex hover:text-sky-900 dark:hover:text-teal-200">
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
                     <a
                         rel="noopener noreferrer"
                         href="#projects"
@@ -47,7 +78,7 @@
                     >
                 </li>
                 <li
-                    class="flex hover:text-sky-900 dark:hover:text-teal-200">
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
                     <a
                         rel="noopener noreferrer"
                         href="#about"
@@ -56,7 +87,7 @@
                     >
                 </li>
                 <li
-                    class="flex hover:text-sky-900 dark:hover:text-teal-200">
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
                     <a
                         rel="noopener noreferrer"
                         href="#contact"
@@ -65,7 +96,7 @@
                     >
                 </li>
             </ul>
-            <button class="flex justify-end p-4 md:hidden">
+            <button class="flex justify-end p-4 md:hidden" id="mobile-menu">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

@@ -17,8 +17,39 @@
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 	</head>
 	<body class="bg-slate-50 dark:bg-gray-800">
-		<header class="p-4 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
-			<div class="container flex justify-between h-16 mx-auto">
+        <div class="fixed hidden h-screen w-screen bg-slate-50 dark:bg-gray-800 dark:text-gray-100 md:hidden" id="overlay">
+            <ul class="flex flex-col items-center justify-center h-full gap-8">
+                <li
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#projects"
+                        class="flex items-center px-4"
+                        >Projects</a
+                    >
+                </li>
+                <li
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#about"
+                        class="flex items-center px-4"
+                        >About</a
+                    >
+                </li>
+                <li
+                    class="flex hover:text-orange-400 dark:hover:text-orange-400">
+                    <a
+                        rel="noopener noreferrer"
+                        href="#contact"
+                        class="flex items-center px-4"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+        </div>
+		<header class="p-4 md:px-10 lg:px-32 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
+            <div class="container flex justify-between h-16 mx-auto">
 				<a
 					rel="noopener noreferrer"
 					href="./index.html"
@@ -72,7 +103,7 @@
 						>
 					</li>
 				</ul>
-				<button class="flex justify-end p-4 md:hidden">
+				<button class="flex justify-end p-4 md:hidden" id="mobile-menu">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -98,10 +129,10 @@
 					<h1 class="text-4xl font-bold leading-none sm:text-5xl">
 						Hey, I'm Austin Labador.
 					</h1>
-					<div class="gen-container px-8 mt-8 text-lg lg:text-2xl">
+					<div class="gen-container px-8 mt-8 text-lg lg:text-2xl text-orange-400">
 						<h2 class="hero-gen">Software Developer</h2>
 					</div>
-                    <div class="hero-image-container flex justify-center">
+                    <div class="hero-image-container flex justify-center py-8">
                         <img src="../img/computer_illustration_1.png" alt="" class="w-1/2">
                     </div>
 					<div
@@ -145,7 +176,7 @@
 				class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100 w-full px-4 md:px-10 lg:px-32"
                 id="projects">
 				<div class="flex justify-center">
-					<h2 class="text-3xl font-bold">Projects</h2>
+					<h2 class="text-4xl font-bold">Projects</h2>
 				</div>
 				<div class="projects grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
 					<article
@@ -278,7 +309,7 @@
 			<section class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100 py-12 px-4 md:px-10 lg:px-32"
             id="about">
 				<div class="w-full flex justify-center">
-					<h2 class="text-3xl font-bold">About Me</h2>
+					<h2 class="text-4xl font-bold">About Me</h2>
 				</div>
 				<div
 					class="w-full flex flex-col justify-center px-8 mt-8 text-lg">
@@ -305,7 +336,7 @@
 			<section class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100 py-8 px-4 md:px-10 lg:px-32" id="tech-stack">
 				<div
 					class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
-					<h2 class="text-3xl font-bold">My Tech Stack</h2>
+					<h2 class="text-4xl font-bold">My Tech Stack</h2>
 					<div
 						class="flex flex-wrap justify-center lg:justify-between">
 						<div
