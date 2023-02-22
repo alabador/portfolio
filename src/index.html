@@ -1,181 +1,486 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Labador - Web Dev</title>
-    <link rel="stylesheet" type="text/css" href="../dist/output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-</head>
-<body>
-    <header class="p-4 dark:bg-gray-800 dark:text-gray-100">
-        <div class="container flex justify-between h-16 mx-auto">
-            <a rel="noopener noreferrer" href="./index.html" aria-label="Back to homepage" class="flex items-center p-2 text-3xl">
-                //AL
-            </a>
-            <ul class="items-stretch hidden space-x-3 md:flex">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Austin Labador - Web Dev</title>
+		<link rel="stylesheet" type="text/css" href="../dist/output.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+	</head>
+	<body>
+		<header class="p-4 dark:bg-gray-800 dark:text-gray-100">
+			<div class="container flex justify-between h-16 mx-auto">
+				<a
+					rel="noopener noreferrer"
+					href="./index.html"
+					aria-label="Back to homepage"
+					class="flex items-center p-2 text-3xl">
+					//AL
+				</a>
+				<ul class="items-stretch hidden space-x-3 md:flex">
+					<label
+						for="Toggle1"
+						class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100">
+						<span>Left</span>
+						<span class="relative">
+							<input
+								id="Toggle1"
+								type="checkbox"
+								class="hidden peer" />
+							<div
+								class="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-blue-400"></div>
+							<div
+								class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
+						</span>
+						<span>Right</span>
+					</label>
 
-                <label for="Toggle1" class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100">
-                    <span>Left</span>
-                    <span class="relative">
-                        <input id="Toggle1" type="checkbox" class="hidden peer">
-                        <div class="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-blue-400"></div>
-                        <div class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
-                    </span>
-                    <span>Right</span>
-                </label>
+					<li
+						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						<a
+							rel="noopener noreferrer"
+							href="./projects.html"
+							class="flex items-center px-4"
+							>Projects</a
+						>
+					</li>
+					<li
+						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						<a
+							rel="noopener noreferrer"
+							href="#"
+							class="flex items-center px-4"
+							>Link</a
+						>
+					</li>
+					<li
+						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						<a
+							rel="noopener noreferrer"
+							href="#"
+							class="flex items-center px-4"
+							>Link</a
+						>
+					</li>
+					<li
+						class="flex hover:text-sky-900 dark:hover:text-teal-200">
+						<a
+							rel="noopener noreferrer"
+							href="#"
+							class="flex items-center px-4"
+							>Link</a
+						>
+					</li>
+				</ul>
+				<button class="flex justify-end p-4 md:hidden">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						class="w-6 h-6">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+			</div>
+		</header>
+		<main>
+			<!-- Hero -->
+			<section class="dark:bg-gray-800 dark:text-gray-100">
+				<div
+					class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
+					<h1 class="text-4xl font-bold leading-none sm:text-5xl">
+						Hey, I'm Austin Labador.
+					</h1>
+					<div class="gen-container px-8 mt-8 text-lg lg:text-2xl">
+						<h2 class="hero-gen">Software Developer</h2>
+					</div>
+					<div
+						class="social-container flex justify-between items-center gap-4 my-8 w-full">
+						<span
+							class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
+						<div class="social-links flex gap-8">
+							<a
+								href="https://github.com/alabador"
+								target="_blank"
+								class="hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-github"></i
+							></a>
+							<a
+								href="https://www.linkedin.com/in/austinlabador/"
+								target="_blank"
+								class="hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-linkedin-in"></i
+							></a>
+							<a
+								href="https://twitter.com/alabador_v2"
+								target="_blank "
+								class="hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-twitter"></i
+							></a>
+						</div>
+						<span
+							class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
+					</div>
+					<div class="flex flex-wrap justify-center">
+						<button
+							class="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700 hover:text-sky-900 dark:hover:text-teal-200">
+							View Projects
+						</button>
+					</div>
+				</div>
+			</section>
 
-                <li class="flex hover:text-sky-900 dark:hover:text-teal-200">
-                    <a rel="noopener noreferrer" href="./projects.html" class="flex items-center px-4 ">Projects</a>
-                </li>
-                <li class="flex hover:text-sky-900 dark:hover:text-teal-200">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 ">Link</a>
-                </li>
-                <li class="flex hover:text-sky-900 dark:hover:text-teal-200">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 ">Link</a>
-                </li>
-                <li class="flex hover:text-sky-900 dark:hover:text-teal-200">
-                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 ">Link</a>
-                </li>
-            </ul>
-            <button class="flex justify-end p-4 md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <main>
-        <!-- Hero -->
-        <section class="dark:bg-gray-800 dark:text-gray-100">
-            <div class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
-                <h1 class="text-4xl font-bold leading-none sm:text-5xl">
-                    Hey, I'm Austin Labador.
-                </h1>
-                <div class="gen-container px-8 mt-8 text-lg lg:text-2xl">
-                    <h2 class="hero-gen">Software Developer</h2>
-                </div>
-                <div class="social-container flex justify-between items-center gap-4 my-8 w-full">
-                    <span class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
-                    <div class="social-links flex gap-8">
-                        <a href="https://github.com/alabador" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/austinlabador/" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/alabador_v2" target="_blank " class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                    <span class="h-0.5 bg-gray-800 dark:bg-white w-full"></span>
-                </div>
-                <div class="flex flex-wrap justify-center">
-                    <button class="px-8 py-3 m-2 text-lg border rounded dark:text-gray-50 dark:border-gray-700 hover:text-sky-900 dark:hover:text-teal-200">View Projects</button>
-                </div>
-            </div>
-        </section>
+			<!-- Projects -->
+			<section
+				class="dark:bg-gray-800 dark:text-gray-100 w-full px-4 md:px-10 lg:px-32">
+				<div class="flex justify-center">
+					<h2 class="text-3xl font-bold">Projects</h2>
+				</div>
+				<div class="projects grid grid-cols-2 gap-8 py-8">
+					<article
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500">
+						<div class="flex py-2 flex-wrap gap-1">
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Javascript
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								TailwindCSS
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								API
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								DaisyUI
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Postman
+							</p>
+						</div>
+						<h1 class="text-2xl py-2">Weather App</h1>
+						<p>
+							A weather app developed using the OpenWeatherMap
+							API. Users are able to search for weather conditions
+							by city and obtain relevant information, as well as
+							the five day forecast.
+						</p>
+						<div class="flex gap-2 pt-2 items-center mt-auto">
+							<a
+								href="https://alabador.github.io/weather-app/"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-solid fa-link"></i
+							></a>
+							<a
+								href="https://github.com/alabador/weather-app"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-github"></i
+							></a>
+						</div>
+					</article>
 
-        <!-- Projects -->
-        <section class="dark:bg-gray-800 dark:text-gray-100 w-full px-4 md:px-10 lg:px-32">
-            <div class="flex justify-center">
-                <h2 class="text-3xl font-bold">Projects</h2>
-            </div>
-            <div class="projects grid grid-cols-2 gap-8 py-8">
-                <article class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500">
-                    <div class="flex py-2 flex-wrap gap-1">
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">Javascript</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">TailwindCSS</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">API</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">DaisyUI</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">Postman</p>
-                    </div>
-                    <h1 class="text-2xl py-2">Weather App</h1>
-                    <p>A weather app developed using the OpenWeatherMap API. Users are able to search for weather conditions by city and obtain relevant information, as well as the five day forecast.</p>
-                    <div class="flex gap-2 pt-2 items-center mt-auto">
-                        <a href="https://alabador.github.io/weather-app/" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/alabador/weather-app" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </article>
+					<article
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500 flex flex-col">
+						<div class="flex py-2 flex-wrap gap-1">
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Javascript
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								React
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								CSS
+							</p>
+						</div>
+						<h1 class="text-2xl py-2">Time Tracking Dashboard</h1>
+						<p>
+							A small project to track time spent on tasks, used
+							to practice React skills.
+						</p>
+						<div class="flex gap-2 pt-2 items-center mt-auto">
+							<a
+								href="https://timetracker-dash.netlify.app/"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-solid fa-link"></i
+							></a>
+							<a
+								href="https://github.com/alabador/time-tracking-dashboard"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-github"></i
+							></a>
+						</div>
+					</article>
 
-                <article class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500 flex flex-col">
-                    <div class="flex py-2 flex-wrap gap-1">
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">Javascript</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">React</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">CSS</p>
-                    </div>
-                    <h1 class="text-2xl py-2">Time Tracking Dashboard</h1>
-                    <p>A small project to track time spent on tasks, used to practice React skills.</p>
-                    <div class="flex gap-2 pt-2 items-center mt-auto"> 
-                        <a href="https://timetracker-dash.netlify.app/" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/alabador/time-tracking-dashboard" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </article>
+					<article
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500 flex flex-col">
+						<div class="flex py-2 flex-wrap gap-1">
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Javascript
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								SCSS
+							</p>
+						</div>
+						<h1 class="text-2xl py-2">Free Game Deals</h1>
+						<p>
+							A SPA used to find current free game deals
+							throughout the web. Uses data from Reddit API and
+							the subreddit r/FreeGameFindings.
+						</p>
+						<div class="flex gap-2 pt-2 items-center mt-auto">
+							<a
+								href="https://alabador.github.io/free-game-findings/"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-solid fa-link"></i
+							></a>
+							<a
+								href="https://github.com/alabador/free-game-findings"
+								target="_blank"
+								class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"
+								><i class="fa-brands fa-github"></i
+							></a>
+						</div>
+					</article>
+				</div>
+			</section>
 
-                <article class="px-10 py-6 rounded-sm border-2 border-solid border-gray-800 dark:border-gray-500 flex flex-col">
-                    <div class="flex py-2 flex-wrap gap-1">
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">Javascript</p>
-                        <p class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">SCSS</p>
-                    </div>
-                    <h1 class="text-2xl py-2">Free Game Deals</h1>
-                    <p>A SPA used to find current free game deals throughout the web. Uses data from Reddit API and the subreddit r/FreeGameFindings.</p>
-                    <div class="flex gap-2 pt-2 items-center mt-auto"> 
-                        <a href="https://alabador.github.io/free-game-findings/" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-solid fa-link"></i></a>
-                        <a href="https://github.com/alabador/free-game-findings" target="_blank" class="pr-2 text-xl hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </article>
-                
-            </div>
-        </section>
+			<!-- About -->
+			<section class="dark:bg-gray-800 dark:text-gray-100 py-12 px-4 md:px-10 lg:px-32">
+				<div class="w-full flex justify-center">
+					<h2 class="text-3xl font-bold">About Me</h2>
+				</div>
+				<div
+					class="w-full flex flex-col justify-center px-8 mt-8 text-lg">
+					<p class="py-4">
+						I'm a Los Angeles-based developer and designer focused
+						on creating user-friendly and responsive websites.
+					</p>
+					<p class="py-8">
+						I've always enjoyed the creative field, which lead me to
+						my study of Human-Computer Interaction and past
+						experiences in UX Design. Throughout this journey, I've
+						also been interested in the functional and
+						problem-solving aspects of tech. The satisfaction of
+						creating something and going through the troubleshooting
+						process is exhilarating, which eventually brought me to
+						transition over to Web Development and Software
+						Engineering.
+					</p>
+				</div>
 
-        <!-- About -->
-        <section class="dark:bg-gray-800 dark:text-gray-100 py-8">
-            <div class="w-full flex justify-center">
-                <h2 class="text-3xl font-bold">About Me</h2>
-            </div>
-            <div class="w-full flex justify-center px-8 mt-8 text-lg">
-                <p class="">I'm a Los Angeles-based developer and designer focused on creating user-friendly and responsive websites.</p>
-            </div>
-        </section>
+				<ul class="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+					<li>
+						<article>
+							<a
+								rel="noopener noreferrer"
+								href="#"
+								class="grid p-4 overflow-hidden md:grid-cols-5 md:gap-y-4 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
+								<h3
+									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
+									Code Coach
+								</h3>
+								<p
+									class="mb-1 ml-8 font-semibold italic md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 dark:text-gray-400">
+									The Coder School
+								</p>
+								<time
+									datetime=""
+									class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-400"
+									>Current</time
+								>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Educate students on a wide variety of
+									programming concepts, using Scratch,
+									JavaScript, and Python to build
+									understanding of fundamentals through a
+									dynamic project based curriculum.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Create customized projects based on
+									individual student’s interests, while
+									assisting with debugging and problem solving
+									as necessary to provide challenge and
+									growth.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Explain technical concepts to non-technical
+									audiences.
+								</p>
+							</a>
+						</article>
+					</li>
+					<li>
+						<article>
+							<a
+								rel="noopener noreferrer"
+								href="#"
+								class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
+								<h3
+									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
+									Digital Marketing Intern
+								</h3>
+								<p
+									class="mb-1 ml-8 font-semibold italic md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 dark:text-gray-400">
+									National Veterinary Associates
+								</p>
+								<time
+									datetime=""
+									class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-400"
+									>Jul 2021 - Aug 2022</time
+								>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Used Contentful headless CMS to build,
+									design, and conduct quality assurance
+									testing of over 100+ websites within the NVA
+									network, consistently surpassing goals on a
+									monthly basis.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Created custom content and layouts on top of
+									existing templates using HTML and CSS.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Communicated and distributed information to
+									team members and clients on a timely basis,
+									leading to an increase in workflow
+									efficiency and client satisfaction.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Produce a multitude of digital assets for
+									websites using Photoshop and Figma, while
+									aligning best practices, WCAG accessibility
+									standards, and branding for clients.
+								</p>
+							</a>
+						</article>
+					</li>
+					<li>
+						<article>
+							<a
+								rel="noopener noreferrer"
+								href="#"
+								class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
+								<h3
+									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
+									UX Design & Research Assistant
+								</h3>
+								<p
+									class="mb-1 ml-8 font-semibold italic md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9 dark:text-gray-400">
+									Diabetes Design Initiative
+								</p>
+								<time
+									datetime=""
+									class="row-start-1 mb-1 md:col-start-1 xl:col-span-2 dark:text-gray-400"
+									>Mar 2020 - Sep 2020</time
+								>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Designed end to end solutions based on
+									synthesis of user research, wireframing,
+									prototyping, and design iterations,
+									resulting in the redesign of two diabetes
+									management apps.
+								</p>
+								<p
+									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									Conducted user research and usability tests
+									with participants around the world to
+									discover problems and validate results,
+									receiving >80% positive feedback from users
+									and stakeholders
+								</p>
+							</a>
+						</article>
+					</li>
+				</ul>
+			</section>
 
-        <!-- Tech Stack -->
-        <section class="dark:bg-gray-800 dark:text-gray-100 py-8">
-            <div class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
-                <h2 class="text-3xl font-bold">My Tech Stack</h2>
-                <div class="flex flex-wrap justify-center lg:justify-between">
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-html5-plain-wordmark colored"></i>
-                      </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400 ">
-                        <i class="devicon-css3-plain-wordmark colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-sass-original colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-tailwindcss-plain colored"></i>         
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-javascript-plain colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-nodejs-plain colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-express-original colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-react-original colored"></i>
-                    </div>
-                    <div class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
-                        <i class="devicon-python-plain colored"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-    </main>
-    <script src="./scripts/main.js" type="module"></script>
-</body>
+			<!-- Tech Stack -->
+			<section class="dark:bg-gray-800 dark:text-gray-100 py-8">
+				<div
+					class="container p-6 mx-auto space-y-6 text-center lg:p-8 lg:space-y-8">
+					<h2 class="text-3xl font-bold">My Tech Stack</h2>
+					<div
+						class="flex flex-wrap justify-center lg:justify-between">
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-html5-plain-wordmark colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-css3-plain-wordmark colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-sass-original colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-tailwindcss-plain colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-javascript-plain colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-nodejs-plain colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i
+								class="devicon-mongodb-plain-wordmark colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-express-original colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-react-original colored"></i>
+						</div>
+						<div
+							class="skill w-12 h-12 mx-10 my-6 fill-current md:mx-12 lg:m-0 dark:text-gray-400">
+							<i class="devicon-python-plain colored"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./scripts/main.js" type="module"></script>
+	</body>
 </html>
