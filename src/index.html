@@ -298,9 +298,7 @@
 				<ul class="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
 					<li>
 						<article>
-							<a
-								rel="noopener noreferrer"
-								href="#"
+							<div
 								class="grid p-4 overflow-hidden md:grid-cols-5 md:gap-y-4 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
 								<h3
 									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
@@ -316,7 +314,7 @@
 									>Current</time
 								>
 								<p
-									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
 									Educate students on a wide variety of
 									programming concepts, using Scratch,
 									JavaScript, and Python to build
@@ -324,7 +322,7 @@
 									dynamic project based curriculum.
 								</p>
 								<p
-									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
 									Create customized projects based on
 									individual student’s interests, while
 									assisting with debugging and problem solving
@@ -332,18 +330,16 @@
 									growth.
 								</p>
 								<p
-									class="ml-8 py-2 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
+									class="ml-8 md:col-start-2 md:col-span-4 xl:col-start-3 xl:col-span-9 md:ml-0 dark:text-gray-300">
 									Explain technical concepts to non-technical
 									audiences.
 								</p>
-							</a>
+							</div>
 						</article>
 					</li>
 					<li>
 						<article>
-							<a
-								rel="noopener noreferrer"
-								href="#"
+							<div
 								class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
 								<h3
 									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
@@ -385,14 +381,12 @@
 									aligning best practices, WCAG accessibility
 									standards, and branding for clients.
 								</p>
-							</a>
+							</div>
 						</article>
 					</li>
 					<li>
 						<article>
-							<a
-								rel="noopener noreferrer"
-								href="#"
+							<div
 								class="grid p-4 overflow-hidden md:grid-cols-5 rounded-xl lg:p-6 xl:grid-cols-12 hover:dark:bg-gray-900">
 								<h3
 									class="mb-1 ml-8 font-semibold text-lg md:col-start-2 md:col-span-4 md:ml-0 xl:col-start-3 xl:col-span-9">
@@ -423,7 +417,7 @@
 									receiving >80% positive feedback from users
 									and stakeholders
 								</p>
-							</a>
+							</div>
 						</article>
 					</li>
 				</ul>
@@ -480,7 +474,48 @@
 					</div>
 				</div>
 			</section>
+            
+            <!-- Contact Us -->
+            <div class="grid w-full grid-cols-1 gap-8 px-8 py-16 mx-auto md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-800 dark:text-gray-100">
+                <div class="flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <h2 class="text-4xl font-bold leading-tight lg:text-5xl">Let's connect!</h2>
+                        <div class="dark:text-gray-400 flex flex-col justify-between h-full">
+                            <p>Need a website built, a new dev for your team, or just want to talk?</p>
+                            <p>Message me at my email below, or at any of my other social links!</p>
+                            <p>I'm always down to talk about code, design, or any upcoming games and anime.</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <form novalidate="" class="space-y-6 ng-untouched ng-pristine ng-valid">
+                    <div>
+                        <label for="name" class="text-sm">Full name</label>
+                        <input id="name" type="text" placeholder="" class="w-full p-3 rounded dark:bg-gray-800">
+                    </div>
+                    <div>
+                        <label for="email" class="text-sm">Email</label>
+                        <input id="email" type="email" class="w-full p-3 rounded dark:bg-gray-800">
+                    </div>
+                    <div>
+                        <label for="message" class="text-sm">Message</label>
+                        <textarea id="message" rows="3" class="w-full p-3 rounded dark:bg-gray-800"></textarea>
+                    </div>
+                    <button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-blue-400 dark:text-gray-900">Send Message</button>
+                </form>
+            </div>
 		</main>
+        <footer>
+            <div class="footer-info dark:bg-gray-800 dark:text-gray-100 py-8 md:px-12 lg:px-16 xl:px-32 flex flex-col justify-center items-center md:flex-row md:justify-between md:items-center">
+                <p>Created by Austin Labador</p>
+                <div class="social-container flex gap-2 items-center">
+                    <a href="https://github.com/alabador/portfolio" class="hover:text-sky-900 dark:hover:text-teal-200">View on GitHub</a>
+                    <a href="https://github.com/alabador" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/austinlabador/" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/alabador_v2" target="_blank" class="hover:text-sky-900 dark:hover:text-teal-200"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
 		<script src="./scripts/main.js" type="module"></script>
 	</body>
 </html>
