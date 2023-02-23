@@ -18,6 +18,10 @@ overlay.querySelectorAll('a').forEach(link => {
     })
 }) 
 
+overlay.querySelector('#menu-close').addEventListener('click', () => {
+    overlay.classList.add('hidden');
+})
+
 function switchTheme(){
     if (toggle.checked) {
         html.classList.remove('dark');

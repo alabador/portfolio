@@ -18,7 +18,23 @@
 	</head>
 	<body class="bg-slate-50 dark:bg-gray-800">
         <div class="fixed hidden h-screen w-screen bg-slate-50 dark:bg-gray-800 dark:text-gray-100 md:hidden" id="overlay">
-            <ul class="flex flex-col items-center justify-center h-full gap-8">
+			<ul class="flex flex-col items-center justify-center h-full gap-8">
+				<label
+						for="dark-toggle"
+						class="inline-flex items-center space-x-4 cursor-pointer dark:text-gray-100"
+						<span><i class="fa-regular fa-moon"></i></span>
+						<span class="relative">
+							<input
+								id="dark-toggle"
+								type="checkbox"
+								class="hidden peer" />
+							<div
+								class="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-blue-400"></div>
+							<div
+								class="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
+						</span>
+						<span><i class="fa-regular fa-sun"></i></span>
+					</label>
                 <li
                     class="flex hover:text-orange-400 dark:hover:text-orange-400">
                     <a
@@ -46,6 +62,7 @@
                         >Contact</a
                     >
                 </li>
+				<div class="text-3xl cursor-pointer hover:text-orange-400 dark:hover:text-orange-400" id="menu-close"><i class="fa-regular fa-circle-xmark"></i></div>
             </ul>
         </div>
 		<header class="p-4 md:px-10 lg:px-32 bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
