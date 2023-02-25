@@ -9,7 +9,6 @@ Link to Project: [Portfolio](https://alabador.github.io/portfolio/)
 ## How It's Made
 
 **Common Tech Used:**
-+ HTML, CSS, JavaScript
++ HTML, TailwindCSS, JavaScript
 
-## Lessons Learned
 
