@@ -660,10 +660,6 @@ video {
   height: 1.5rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -792,10 +788,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -861,16 +853,6 @@ video {
 
 .fill-current {
   fill: currentColor;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-top {
-  -o-object-position: top;
-     object-position: top;
 }
 
 .p-2 {
