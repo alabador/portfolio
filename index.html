@@ -136,13 +136,16 @@
 				</button>
 			</div>
 		</header>
-		<main id="main">
+		<main id="main" class="relative">
             <!-- Scroll to Top -->
             <button type="button" class="px-4 py-3 mr-4 font-semibold rounded-full bg-gray-900 text-gray-100 dark:bg-gray-100 dark:text-gray-800 fixed right-0 bottom-4 opacity-70" id="scroll-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
 			<!-- Hero -->
 			<section class="bg-slate-50 dark:bg-gray-800 dark:text-gray-100">
 				<div
-					class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
+					class="container mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32"
+					id="hero">
 					<h1 class="text-4xl font-bold leading-none sm:text-5xl">
 						Hey, I'm Austin Labador.
 					</h1>
@@ -203,7 +206,51 @@
 				</div>
 				<div class="projects grid grid-cols-1 md:grid-cols-2 gap-8 py-8">
 					<article
-						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500">
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500 flex flex-col">
+						<div class="flex py-2 flex-wrap gap-1">
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Javascript
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								TailwindCSS
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								API
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								DaisyUI
+							</p>
+							<p
+								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
+								Python
+							</p>
+						</div>
+						<h1 class="text-2xl py-2">Teyvat Tracker</h1>
+						<p class="">
+							Based on the video game Genshin Impact, this website is used to keep track of current events, patch notes, and updates, as well as act as act as an accessible resource for game information.
+							Uses data from Fandom as well as the Genshin.dev api.
+						</p>
+						<div class="flex gap-2 pt-2 items-center mt-auto">
+							<a
+								href="#"
+								target="_blank"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
+								><i class="fa-solid fa-link"></i
+							></a>
+							<a
+								href="https://github.com/alabador/teyvat-tracker"
+								target="_blank"
+								class="pr-2 text-xl hover:text-orange-400 dark:hover:text-orange-400"
+								><i class="fa-brands fa-github"></i
+							></a>
+						</div>
+					</article>
+					<article
+						class="px-10 py-6 rounded-sm border-2 border-solid border-gray-900 dark:border-gray-500 flex flex-col">
 						<div class="flex py-2 flex-wrap gap-1">
 							<p
 								class="inline-block px-2 py-1 text-sm font-semibold rounded-md bg-blue-400 text-gray-900">
@@ -233,7 +280,7 @@
 							by city and obtain relevant information, as well as
 							the five day forecast.
 						</p>
-						<div class="flex gap-2 pt-2 items-center mt-auto">
+						<div class="flex gap-2 pt-2 items-center mt-auto justify-self-end">
 							<a
 								href="https://alabador.github.io/weather-app/"
 								target="_blank"
