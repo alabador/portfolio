@@ -2,7 +2,7 @@
 
 Repository for personal portfolio. 
 
-Link to Project: [Portfolio](https://alabador.github.io/portfolio/)
+Link to Project: [Portfolio](https://austinlabador.netlify.app/)
 
 ![Desktop Version](./img/portfolio.png)
 

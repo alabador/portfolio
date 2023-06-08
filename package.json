@@ -1,22 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Repository for personal portfolio.",
-  "main": "index.js",
+  "name": "astro-portfolio",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alabador/portfolio.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alabador/portfolio/issues"
-  },
-  "homepage": "https://github.com/alabador/portfolio#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.6"
+  "dependencies": {
+    "astro": "^2.5.6"
   }
 }
