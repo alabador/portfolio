@@ -2,19 +2,24 @@
 import '../styles/global.css'
 import Layout from '../layouts/Layout.astro'
 import logo from '/img/austin-labador-high-resolution-logo-black-on-transparent-background.svg'
----
+import Hero from '../components/Hero.astro';
 
-<header>
-    <a class="header-logo" href="#"><img src={logo} alt="website logo"></a>
-    <nav class="nav">
-        <ul class="nav-links">
-            <li class="nav-link"><a href="#">Projects</a></li>
-            <li class="nav-link"><a href="#">Design</a></li>
-            <li class="nav-link"><a href="#">About</a></li>
-            <li class="nav-link"><a href="#">Resume</a></li>
-        </ul>
-    </nav>
-</header>
+---
+<section class="header-container">
+    <header>
+        <a class="header-logo" href="#"><img src={logo} alt="website logo"></a>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#">Projects</a></li>
+                <li class="nav-link"><a href="#">Design</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <Hero />
+</section>
+
 
 <style>
     header {
@@ -43,6 +48,18 @@ import logo from '/img/austin-labador-high-resolution-logo-black-on-transparent-
         header {
             flex-direction: row;
             justify-content: space-between;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        header {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
