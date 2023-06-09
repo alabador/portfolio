@@ -27,7 +27,7 @@ import Header from '../components/Header.astro';
 				<Card
 					href="https://astro.build/chat/"
 					title="Community"
-					body="Come say hi to our amazing Discord community. ❤️"
+					body="Come say hi to our amazing Discord community. ❤️ asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf"
 				/>
 			</ul>
 		</main>
@@ -37,11 +37,10 @@ import Header from '../components/Header.astro';
 <style>
 	body {
 		display: grid;
+		height: 100vh;
 	}
 	main {
 		margin: auto;
-		padding: 3rem;
-		max-width: 1200px;
 	}
 	.link-card-grid {
 		display: grid;
@@ -49,17 +48,10 @@ import Header from '../components/Header.astro';
 		padding: 0;
 	}
 	@media screen and (min-width: 800px) {
-		/* .link-card-grid{
-			grid-template-columns: repeat(2, 1fr);
-		} */
-		body {
-			grid-template-columns: 300px 1fr;
-		}
+
 	}
 	@media screen and (min-width: 1200px) {
-		main {
-			padding: 1.5rem;
-		}
+
 		.link-card-grid{
 			grid-template-columns: repeat(2, 1fr);
 		}
