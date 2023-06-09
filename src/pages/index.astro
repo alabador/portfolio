@@ -2,11 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<body>
 		<Header />
+		<Hero />
 		<main>
 			<ul role="list" class="link-card-grid">
 				<Card
@@ -36,7 +38,6 @@ import Header from '../components/Header.astro';
 
 <style>
 	body {
-		display: grid;
 		height: 100vh;
 	}
 	main {
@@ -51,7 +52,6 @@ import Header from '../components/Header.astro';
 
 	}
 	@media screen and (min-width: 1200px) {
-
 		.link-card-grid{
 			grid-template-columns: repeat(2, 1fr);
 		}

@@ -8,10 +8,10 @@ import logo from '/img/austin-labador-high-resolution-logo-black-on-transparent-
     <a class="header-logo" href="#"><img src={logo} alt="website logo"></a>
     <nav class="nav">
         <ul class="nav-links">
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">About</a></li>
-            <li><a class="resume-link" href="#">Resume</a></li>
+            <li class="nav-link"><a href="#">Projects</a></li>
+            <li class="nav-link"><a href="#">Design</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Resume</a></li>
         </ul>
     </nav>
 </header>
@@ -28,7 +28,9 @@ import logo from '/img/austin-labador-high-resolution-logo-black-on-transparent-
     }
     .header-logo, .nav-links a {
         text-decoration: none;
-        color: var(--paragraph)
+    }
+    .nav-link a{
+        color: var(--paragraph);
     }
     .header-logo img {
         width: 250px;
