@@ -13,19 +13,22 @@ import Header from '../components/Header.astro';
 					title="WeWatch" 
 					href="https://github.com/alabador/wewatch"
 					image="/img/wewatch.jpeg"
-					body="test text"
+					body="test"
+					tech={["Node.js", "Express.js", "MongoDB", "MVC Pattern"]}
 				/>
 				<Card 
-					title="WeWatch" 
-					href="https://github.com/alabador/wewatch"
+					title="Goatchinanggo Landing Page" 
+					href="https://github.com/alabador/goatchinanggo"
 					image="/img/goatchinanggo.png"
 					body="test text"
+					tech={["Astro", "TypeScript", "CSS"]}
 				/>
 				<Card 
-					title="WeWatch" 
-					href="https://github.com/alabador/wewatch"
+					title="Nutrifax" 
+					href="https://github.com/alabador/nutrifax"
 					image="/img/nutrifax.png"
 					body="test text"
+					tech={["React.js", "TypeScript"]}
 				/>
 			</section>
 		</main>
@@ -47,12 +50,8 @@ import Header from '../components/Header.astro';
 		width: 100%;
 	}
 	@media screen and (min-width: 1200px) {
-		.link-card-grid{
-			grid-template-columns: repeat(2, 1fr);
-		}
 		body {
 			grid-template-columns: 35% 65%;
-			gap: 2rem;
 		}
 	}
 </style>
