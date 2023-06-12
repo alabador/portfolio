@@ -31,6 +31,7 @@ const { title, href, image, body, tech } = Astro.props;
 	</a>
 </article>
 
+
 <style>
 	.project-card {
 		padding: 1rem;
@@ -39,6 +40,10 @@ const { title, href, image, body, tech } = Astro.props;
 		background-image: none;
 		border-radius: 0.6rem;
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+		animation: 0.5s ease-in-out 0s 1 slideInFromLeft;
+
+
 	}
 
 	.project-card-link {
@@ -53,9 +58,23 @@ const { title, href, image, body, tech } = Astro.props;
 		background-color: var(--main);
 		opacity: 0.8;
 	}
+
+	.project-card:hover  {
+		border: 4px solid var(--highlight);
+		transition: 0.1s ease-in-out;
+	}
 	
 	.project-card-link:hover img {
-		transform: rotate(5deg);
+		transform: rotate(3deg) scale(1.1);
+	}
+
+	@keyframes slideInFromLeft {
+		0% {
+			transform: translateX(200%);
+		}
+		100% {
+			transform: translateX(0);
+		}
 	}
 
 	.project-card-text {
