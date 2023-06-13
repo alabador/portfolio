@@ -3,6 +3,7 @@ import '../styles/global.css'
 import Layout from '../layouts/Layout.astro'
 import logo from '/img/austin-labador-high-resolution-logo-black-on-transparent-background.svg'
 import Hero from '../components/Hero.astro';
+import TechStack from './TechStack.astro';
 
 ---
 <section class="header-container">
@@ -18,6 +19,7 @@ import Hero from '../components/Hero.astro';
         </nav>
     </header>
     <Hero />
+    <TechStack />
 </section>
 
 
@@ -65,9 +67,9 @@ import Hero from '../components/Hero.astro';
             align-items: flex-start;
         }
         .header-container {
-            display: flex;
+            /* display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: flex-start; */
         }
     }
 
