@@ -10,6 +10,9 @@ import SocialLinks from './SocialLinks.astro';
     <h1>I'm <span class="title-name">Austin Labador</span>, a full-stack developer.</h1>
     <SocialLinks />
     <p class="hero-p">I'm a Los Angeles-based developer with a drive for problem solving, combining techinal expertise with a user-centric approach to create visually appealing and intuitive digital experiences.</p>
+    <div class="resume-button-div">
+        <a class="resume-button" href="">View Resume</a>
+    </div>
 </section>
 
 <style>
@@ -38,5 +41,17 @@ import SocialLinks from './SocialLinks.astro';
         font-weight: 400;
         font-size: 1.2rem;
         color: var(--paragraph);
+    }
+    .resume-button {
+        padding: 1rem;
+        background-color: var(--highlight);
+        text-decoration: none;
+        color: var(--secondary);
+    }
+    .resume-button:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    .resume-button-div {
+        margin: 2rem 0 3rem;
     }
 </style>
