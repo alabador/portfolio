@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title = "Austin Labador - Software Developer | Designs">
+    <body>
+        <Header />
+        <main>
+			<h2 class="main-title">Design</h2>
+			<section class="link-card-grid">
+                <Card 
+					title="T1 Pal" 
+					href="https://austinlabador.wordpress.com/2023/04/13/t1-pal/"
+					image="/img/t1pal.png"
+					body="test",
+                    tech={["UI Design", "UX Research", "Mobile Design", "Figma"]}
+				/>
+                <Card 
+					title="Valorant Tactics" 
+					href="https://austinlabador.wordpress.com/2023/04/13/valorant-tactics/"
+					image="/img/valorant-tactics.png"
+					body="test",
+                    tech={["UI Design", "Branding", "Figma"]}
+				/>
+                <Card 
+					title="Wish Redesign" 
+					href="https://austinlabador.wordpress.com/2023/04/13/startups-expectations-vs-reality/"
+					image="/img/wish-redesign.png"
+					body="test",
+                    tech={["UX Research", "UI Design", "Figma"]}
+				/>
+            </section>
+        </main>
+    </body>
+</Layout>
+
+<style>
+	body {
+		display: grid;
+	}
+	main {
+		width: 100%;
+		padding: 2rem;
+		
+	}
+    .main-title {
+		color: var(--headline);
+	}
+	.link-card-grid {
+		display: grid;
+		gap: 1rem;
+		padding: 0;
+		width: 100%;
+	}
+	@media screen and (min-width: 1200px) {
+		body {
+			grid-template-columns: 35% 65%;
+		}
+	}
+</style>

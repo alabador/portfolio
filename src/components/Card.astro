@@ -6,7 +6,7 @@ export interface Props {
 	image: string;
 	body: string;
 	href: string;
-	tech: string[];
+	tech?: string[];
 }
 
 const { title, href, image, body, tech } = Astro.props;
@@ -15,13 +15,18 @@ const { title, href, image, body, tech } = Astro.props;
 <article class="project-card">
 	<a class="project-card-link" href={href} target="_blank">
 		<section class="project-card-text">
-			<div class="project-card-tech">
+			{
+				tech ? 
+				<div class="project-card-tech">
 				{
 					tech.map((t, index) => {
 						return (<p>{t}</p>)
 					})
 				}
-			</div>
+				</div> :
+				null
+			}
+
 			<h2>{title}</h2>
 			<p>{body}</p>
 		</section>
@@ -102,10 +107,14 @@ const { title, href, image, body, tech } = Astro.props;
 	.project-card-tech p{
 		font-size: 0.7rem;
 		background-color: var(--highlight);
-		padding: 0.3rem;
+		padding: 0.2rem;
 		border-radius: 4px;
 		color: var(--secondary);
-		font-weight: 700;
+		font-weight: 600;
+	}
+
+	.project-card-image {
+		height: 100%;
 	}
 
 	.project-card-image img {
