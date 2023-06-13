@@ -1,0 +1,38 @@
+---
+import '../styles/global.css'
+---
+
+<div class="social-links">
+    <a
+        href="https://github.com/alabador"
+        target="_blank"
+        class=""
+        ><i class="fa-brands fa-github"></i
+    ></a>
+    <a
+        href="https://www.linkedin.com/in/austinlabador/"
+        target="_blank"
+        class=""
+        ><i class="fa-brands fa-linkedin-in"></i
+    ></a>
+    <a
+        href="https://twitter.com/alabador_v2"
+        target="_blank "
+        class=""
+        ><i class="fa-brands fa-twitter"></i
+    ></a>
+</div>
+
+<style>
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+    .fa-brands {
+        font-size: 1.6rem;
+        color: var(--paragraph);
+    }
+    .social-links a:hover .fa-brands {
+        color: var(--tertiary);
+    }
+</style>

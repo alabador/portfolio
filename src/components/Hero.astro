@@ -1,18 +1,20 @@
 ---
 import '../styles/global.css'
 import Layout from '../layouts/Layout.astro'
+import SocialLinks from './SocialLinks.astro';
+
 ---
 
 <section class="hero">
     <h3>Hey there!</h3>
     <h1>I'm <span class="title-name">Austin Labador</span>, a full-stack developer.</h1>
-    <p class="hero-p">I'm a developer with a drive for problem solving, integrating code and design to develop responsive and intuitive user experiences.</p>
+    <SocialLinks />
+    <p class="hero-p">I'm a Los Angeles-based developer with a drive for problem solving, combining techinal expertise with a user-centric approach to create visually appealing and intuitive digital experiences.</p>
 </section>
 
 <style>
     .hero {
         padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
         background-color: var(--background);
     }
     .hero h3 {
