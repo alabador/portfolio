@@ -43,6 +43,13 @@ import TechStack from './TechStack.astro';
     }
     .nav-link a{
         color: var(--paragraph);
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .nav-link a::before {
+        content:'/';
+        font-weight:300;
+        padding-right: 0.2rem; 
     }
     .header-logo img {
         width: 250px;
