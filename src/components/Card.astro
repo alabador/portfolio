@@ -75,10 +75,15 @@ const { title, href, image, body, tech } = Astro.props;
 
 	@keyframes slideInFromLeft {
 		0% {
-			transform: translateX(200%);
+			transform: translateX(-100%);
+			z-index: -1;
+		}
+		99% {
+			z-index: -1;
 		}
 		100% {
 			transform: translateX(0);
+			z-index: 2;
 		}
 	}
 
