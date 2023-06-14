@@ -4,7 +4,7 @@ Repository for personal portfolio.
 
 Link to Project: [Portfolio](https://austinlabador.netlify.app/)
 
-![Desktop Version](./img/portfolio.png)
+![Desktop Version](/img/portfolio.png)
 
 ## How It's Made
 
