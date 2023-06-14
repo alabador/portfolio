@@ -9,6 +9,6 @@ Link to Project: [Portfolio](https://austinlabador.netlify.app/)
 ## How It's Made
 
 **Common Tech Used:**
-+ HTML, TailwindCSS, JavaScript
++ Astro, TypeScript, CSS
 
 
