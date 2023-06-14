@@ -13,7 +13,7 @@ import TechStack from './TechStack.astro';
             <ul class="nav-links">
                 <li class="nav-link"><a href="/" id="projects-link">Projects</a></li>
                 <li class="nav-link"><a href="/design/" id="design-link">Design</a></li>
-                <li class="nav-link" ><a href="#" id="about-link">About</a></li>
+                <li class="nav-link" ><a href="/about/" id="about-link">About</a></li>
                 <li class="nav-link"><a href="#" id="resume-link">Resume</a></li>
             </ul>
         </nav>
@@ -53,6 +53,7 @@ import TechStack from './TechStack.astro';
     }
     .header-logo img {
         width: 250px;
+        margin-top: 1rem;
     }
     .nav-links {
         display: flex;
@@ -83,12 +84,15 @@ import TechStack from './TechStack.astro';
 
 <script>
     const currentPage:string = window.location.pathname;
-    console.log(currentPage);
+    const mainContent = document.querySelector('.main-title');
     if(currentPage === '/'){
         document.querySelector('#projects-link')?.setAttribute("style", "color: #ff8e3c")
+        mainContent?.scrollIntoView({behavior: 'smooth', block: 'center'});
     } else if (currentPage === '/design/') {
         document.querySelector('#design-link')?.setAttribute("style", "color: #ff8e3c")
+        mainContent?.scrollIntoView({behavior: 'smooth', block: 'center'});
     } else if (currentPage === '/about/') {
-        document.querySelector('#about-link')?.setAttribute("style", "color: #ff8e3c") 
+        document.querySelector('#about-link')?.setAttribute("style", "color: #ff8e3c")
+        mainContent?.scrollIntoView({behavior: 'smooth', block: 'center'});
     }
 </script>
