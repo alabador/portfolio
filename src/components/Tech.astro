@@ -28,4 +28,13 @@ const {tech, icon} = Astro.props;
     .tech-square p {
         text-align: center;
     }
+
+    @media screen and (max-width: 699px) {
+        .tech-square i {
+            font-size: 1rem;
+        }
+        .tech-square p {
+            font-size: 0.7rem;
+        }
+    }
 </style>
