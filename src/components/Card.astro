@@ -107,6 +107,7 @@ const { title, href, image, body, tech } = Astro.props;
 	.project-card-tech {
 		display: flex;
 		gap: 0.25rem;
+		flex-wrap: wrap;
 	}
 
 	.project-card-tech p{
@@ -131,9 +132,12 @@ const { title, href, image, body, tech } = Astro.props;
 		transition: 200ms ease-in-out;
 	}
 
-	@media screen and (max-width: 699px) {
-		.project-card-image {
+	@media screen and (max-width: 599px) {
+		/* .project-card-image {
 			display: none;
+		} */
+		.project-card-image img {
+			width: 100px;
 		}
 	}
 
