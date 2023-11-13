@@ -1,3 +1,4 @@
+import SocialLinks from "./SocialLinks"
 
 
 const Hero = () => {
@@ -5,8 +6,9 @@ const Hero = () => {
     <section>
         <h1 className="text-4xl font-bold">Austin Labador</h1>
         <h3>(Full Stack Developer)</h3>
+        <SocialLinks />
         {/* <SocialLinks /> */}
-        <p className="pt-8">Hey, I'm Austin.</p>
+        <p className="pt-4">Hey, I'm Austin.</p>
         <p className="py-4">
             I'm currently working towards a Post-Bacc B.S. in Computer Science, at Oregon State University!
             Prior to that I studied Human-Computer Interaction at UC San Diego 
