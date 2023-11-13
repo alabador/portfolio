@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <header className="w-full pt-8 px-20 md:px-[20%] absolute">
+    <header className="w-full pt-8 px-20 md:px-[20%]">
         <nav>
             <ul className="flex justify-between">
                 <li className="hover:text-orange-300">

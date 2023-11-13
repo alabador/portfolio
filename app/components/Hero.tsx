@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks"
 
 const Hero = () => {
   return (
-    <section>
+    <section className="">
         <h1 className="text-4xl font-bold">Austin Labador</h1>
         <h3>(Full Stack Developer)</h3>
         <SocialLinks />

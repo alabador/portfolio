@@ -31,7 +31,7 @@ const CardSection = () => {
     
     return (
         <section className="flex flex-col w-full">
-            <h1 className="text-4xl pt-24 pb-8 font-bold">Projects</h1>
+            <h1 className="text-4xl pt-8 pb-8 font-bold">Projects</h1>
             {projects.map((project) => {
                 return(
                     <Card 
