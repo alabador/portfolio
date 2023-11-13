@@ -12,7 +12,7 @@ const Card = ({projectName, projectUrl, tech, desc}: CardProps) => {
             <h2 className="text-xl font-semibold after:content-['_↗']">{projectName}</h2>
             <div className="text-sm py-1">
                 {tech.map(item => 
-                    <p key={`${projectName}${item}`} className="inline pr-2 before:content-['↪︎']">
+                    <p key={`${projectName}${item}`} className="inline-block pr-2 before:content-['↪︎']">
                         {`${item}`}
                     </p>
                 )}
