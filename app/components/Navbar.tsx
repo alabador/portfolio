@@ -12,7 +12,7 @@ const Navbar = () => {
                   <Link href="/work">Work</Link>
                 </li>
                 <li>
-                  <Link href="/resume">Resume</Link>
+                  <Link href="resume.pdf" target="_blank">Resume</Link>
                 </li>
             </ul>
         </nav>
