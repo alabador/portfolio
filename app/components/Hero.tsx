@@ -3,7 +3,7 @@
 const Hero = () => {
   return (
     <section>
-        <h1 className="text-4xl">Austin Labador</h1>
+        <h1 className="text-4xl font-bold">Austin Labador</h1>
         <h3>(Full Stack Developer)</h3>
         {/* <SocialLinks /> */}
         <p className="pt-8">Hey, I'm Austin.</p>
